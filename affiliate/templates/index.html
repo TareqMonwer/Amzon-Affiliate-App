@@ -1,0 +1,290 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Blog with Tareqmonwer</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="{% static 'affiliate/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="{% static 'affiliate/css/modern-business.css' %}" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="/">ReadTM</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li> -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <!-- Slide One - Set the background image for this slide in the line below -->
+        <div class="carousel-item active" style="background-image: url('{% static 'affiliate/images/standout.jpg' %}')">
+          <div class="carousel-caption d-none d-md-block">
+            <h1>Stand Out Everywhere</h1>
+            <p>Read all guidelines and successful partners stories/recommendations to become stand out at everywhere</p>
+            <a href="#" class="btn btn-sm btn-light">Read More</a>
+          </div>
+        </div>
+        <!-- Slide Two - Set the background image for this slide in the line below -->
+        <div class="carousel-item" style="background-image: url('{% static 'affiliate/images/teamwork.jpg' %}')">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>Productivity and Teamwork Guidelines</h3>
+            <p>Read all guidelines and successful partners stories/recommendations to become more productive at work</p>
+            <a href="#" class="btn btn-sm btn-light">Read More</a>
+          </div>
+        </div>
+        <!-- Slide Three - Set the background image for this slide in the line below -->
+        <div class="carousel-item" style="background-image: url('{% static 'affiliate/images/meetingroom.jpg' %}')">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>Become a Successful Boss</h3>
+            <p>Read all guidelines and successful partners stories/recommendations to become a successful boss</p>
+            <a href="#" class="btn btn-sm btn-light">Read More</a>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <h1 class="my-4">Last Month's Book Reviews</h1>
+
+    <!-- Marketing Icons Section -->
+    <div class="row">
+      <div class="col-lg-4 mb-4">
+        <div class="card h-100">
+          <h4 class="card-header">Technical Books (Modern)</h4>
+          <div class="card-body">
+            <p class="card-text">Checkout our modern technical book reviews to keep yourself up to date.</p>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn btn-sm btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-4">
+        <div class="card h-100">
+          <h4 class="card-header">Soft-skill and Career</h4>
+          <div class="card-body">
+            <p class="card-text">No one tells you how to get succeed in your career/position.
+              But there are some great authors who did this for you, check 'em now.
+            </p>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn btn-sm btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-4">
+        <div class="card h-100">
+          <h4 class="card-header">Connect The Dots</h4>
+          <div class="card-body">
+            <p class="card-text">
+              There are things you must know about, not as a programmer but as a human being.
+              These books informs you and talks about these things in programmer way :P.
+            </p>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn btn-sm btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.row -->
+
+    <!-- Portfolio Section -->
+    <h2>TMRead Deals</h2>
+
+    <div class="row">
+      <div class="col-lg-4 col-sm-6 portfolio-item">
+        <div class="card h-100">
+          <a href="https://amzn.to/3jf4S2g">
+            <img class="card-img-top" src="{% static 'affiliate/images/products/book.jpg' %}" alt="">
+          </a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="https://amzn.to/3jf4S2g">The Complete Software Developer's Career Guide: How to Learn Programming Languages Quickly, Ace Your Programming Interview, and Land Your Software Developer Dream Job</a>
+            </h4>
+            <p class="card-text">Technical knowledge alone isn't enough - increase your software development income by leveling up your soft skills
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6 portfolio-item">
+        <div class="card h-100">
+          <a href="https://amzn.to/3jj4hwy">
+            <img class="card-img-top" src="{% static 'affiliate/images/products/graphicscard.jpg' %}" alt="">
+          </a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="https://amzn.to/3jj4hwy">MSI Gaming GeForce GTX 1660 128-Bit HDMI/DP 6GB GDRR5 HDCP Support DirectX 12 Dual Fan VR Ready OC Graphics Card (GTX 1660 Gaming X 6G)</a>
+            </h4>
+            <p class="card-text">
+              Chipset: NVIDIA GeForce GTX 1660 |
+              Boost Clock: 1860 MHz |
+              Memory Interface: 128-bit
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6 portfolio-item">
+        <div class="card h-100">
+          <a href="https://amzn.to/30pVBfb"><img class="card-img-top" src="{% static 'affiliate/images/products/gamingchair.jpg' %}" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="https://amzn.to/30pVBfb">AKRacing Masters Series Max Gaming Chair with Wide Flat Seat, 400 Lbs Weight Limit, Rocker and Seat Height Adjustment Mechanisms with 5/10 Warranty,Indigo -</a>
+            </h4>
+            <p class="card-text"></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6 portfolio-item">
+        <div class="card h-100">
+          <a href="https://amzn.to/3j91kOZ"><img class="card-img-top" src="{% static 'affiliate/images/products/gamingchair1.jpg' %}" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="https://amzn.to/3j91kOZ">RESPAWN 200 Racing Style Gaming Chair, in Blue (RSP-200-BLU)</a>
+            </h4>
+            <p class="card-text">GAMIFIED SEATING: A racecar-style gaming chair that provides luxury and comfort, whether it's used for intense gaming sessions and climbing to the top of the leaderboards, or long work days</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6 portfolio-item">
+        <div class="card h-100">
+          <a href="https://amzn.to/3hbspzb"><img class="card-img-top" src="{% static 'affiliate/images/products/standingdesk.jpg' %}" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="https://amzn.to/3hbspzb  ">Standing Desk with Height Adjustable – FEZIBO Stand Up Desk Converter, 34 inches Ergonomic Tabletop Workstation Riser Fits Dual Monitors Black</a>
+            </h4>
+            <p class="card-text"></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6 portfolio-item">
+        <div class="card h-100">
+          <a href="https://amzn.to/3hbmZ7o"><img class="card-img-top" src="{% static 'affiliate/images/products/standingdesk1.jpg' %}" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="https://amzn.to/3hbmZ7o">Uprite Ergo Sit2Stand Desktop Height Adjustable Workstation - Dual Monitor - Black/Black</a>
+            </h4>
+            <p class="card-text">EASY SIT TO STAND: The Uprite Ergo Sit2Stand moves effortlessly from sitting to standing in seconds with the pull of a locking actuator handle, </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.row -->
+
+    <hr>
+    <!-- Call to Action Section -->
+    <div class="row mb-4 bg-warning align-items-center my-5">
+      <div class="col-md-8">
+        <p>Haven't tried some python books yet? try these best seller books, you'll become a pro Pythoninsta.</p>
+      </div>
+      <div class="col-md-4">
+        <a class="my-2 btn btn-lg btn-secondary btn-block" target="_blank" href="https://www.amazon.com/gp/search?ie=UTF8&tag=tareqmonwer-20&linkCode=ur2&linkId=3906130a4469d059857b2b755e5d9bec&camp=1789&creative=9325&index=books&keywords=Python programming">Get Python Books</a>
+        <img src="//ir-na.amazon-adsystem.com/e/ir?t=tareqmonwer-20&l=ur2&o=1" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+      </div>
+    </div>
+    <hr>
+
+    <!-- Featured Products Section -->
+    <div class="row">
+      <div class="col-lg-6">
+        <script type="text/javascript">
+          amzn_assoc_placement = "adunit0";
+          amzn_assoc_search_bar = "true";
+          amzn_assoc_tracking_id = "tareqmonwer-20";
+          amzn_assoc_search_bar_position = "bottom";
+          amzn_assoc_ad_mode = "search";
+          amzn_assoc_ad_type = "smart";
+          amzn_assoc_marketplace = "amazon";
+          amzn_assoc_region = "US";
+          amzn_assoc_title = "Popular Books on Django";
+          amzn_assoc_default_search_phrase = "django books";
+          amzn_assoc_default_category = "All";
+          amzn_assoc_linkid = "cfcbdcf80adbd99ecb2a76abaa2c594a";
+        </script>
+        <script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US"></script>
+      </div>
+      <div class="col-lg-6">
+        <script type="text/javascript">
+          amzn_assoc_placement = "adunit0";
+          amzn_assoc_search_bar = "true";
+          amzn_assoc_tracking_id = "tareqmonwer-20";
+          amzn_assoc_search_bar_position = "bottom";
+          amzn_assoc_ad_mode = "search";
+          amzn_assoc_ad_type = "smart";
+          amzn_assoc_marketplace = "amazon";
+          amzn_assoc_region = "US";
+          amzn_assoc_title = "Shop Related Products";
+          amzn_assoc_default_search_phrase = "standing desk";
+          amzn_assoc_default_category = "All";
+          amzn_assoc_linkid = "cfcbdcf80adbd99ecb2a76abaa2c594a";
+        </script>
+        <script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US"></script>
+      </div>
+    </div>
+    <!-- /.row -->
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2020</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="{% static 'affiliate/vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'affiliate/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+</body>
+
+</html>
