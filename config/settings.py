@@ -29,6 +29,7 @@ SECRET_KEY = 'nyw(tz2x++0e)+w*f%#8y#x!-waf8g)%zjtk8rh$-7!o=spk%s'
 DEBUG = True
 
 ALLOWED_HOSTS = [
+    'django-affiliate-app.herokuapp.com',
     'https://django-affiliate-app.herokuapp.com',
     'https://django-affiliate-app.herokuapp.com/',
     '*',
@@ -49,7 +50,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
-    'whitenoise.middleware.WhiteNoiseMiddleware'
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
