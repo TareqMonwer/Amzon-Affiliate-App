@@ -7,6 +7,11 @@ verify_ssl = true
 
 [packages]
 django = "*"
+gunicorn = "*"
+django-heroku = "*"
+python-decouple = "*"
+dj-database-url = "*"
+whitenoise = "*"
 
 [requires]
 python_version = "3.8"
