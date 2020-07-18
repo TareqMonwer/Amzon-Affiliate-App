@@ -1,6 +1,7 @@
 .pytest_cache/
 .vscode/
 .idea/
+.env
 
 
 # gitignore.io/api/django
