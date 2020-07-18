@@ -23,6 +23,12 @@ class Customizer(TimeStampedModel):
             return self.product_title
         elif self.title_length >= 0:
             return self.product_title[:self.title_length] + '...'
+    
+    def get_details(self):
+        if self.details_length < 0:
+            return self.product_title
+        elif self.details_length >= 0:
+            return self.product_details[:self.details_length] + '...'
 
 
 class Deal(Customizer):
