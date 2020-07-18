@@ -14,6 +14,7 @@ python-decouple = "*"
 dj-database-url = "*"
 whitenoise = "*"
 django-model-utils = "*"
+psycopg2-binary = "*"
 
 [requires]
 python_version = "3.8"
