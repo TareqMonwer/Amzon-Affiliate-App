@@ -4,6 +4,7 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
+django-extensions = "*"
 
 [packages]
 django = "*"
@@ -12,6 +13,7 @@ django-heroku = "*"
 python-decouple = "*"
 dj-database-url = "*"
 whitenoise = "*"
+django-model-utils = "*"
 
 [requires]
 python_version = "3.8"

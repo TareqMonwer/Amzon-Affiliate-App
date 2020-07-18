@@ -141,81 +141,25 @@
     <h2>TMRead Deals</h2>
 
     <div class="row">
-      <div class="col-lg-4 col-sm-6 portfolio-item">
-        <div class="card h-100">
-          <a href="https://amzn.to/3jf4S2g">
-            <img class="card-img-top" src="{% static 'affiliate/images/products/book.jpg' %}" alt="">
-          </a>
-          <div class="card-body">
-            <h4 class="card-title">
-              <a href="https://amzn.to/3jf4S2g">The Complete Software Developer's Career Guide: How to Learn Programming Languages Quickly, Ace Your Programming Interview, and Land Your Software Developer Dream Job</a>
-            </h4>
-            <p class="card-text">Technical knowledge alone isn't enough - increase your software development income by leveling up your soft skills
-            </p>
+      {% for deal in deals %}
+        <div class="col-lg-4 col-sm-6 portfolio-item">
+          <div class="card h-100">
+            <a href="{{ deal.product_shortlink }}">
+              {{ deal.product_image_link | safe }}
+            </a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="https://amzn.to/3jf4S2g">
+                  {{ deal.product_title }}
+                </a>
+              </h4>
+              <p class="card-text">
+                {{ deal.product_details }}
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-lg-4 col-sm-6 portfolio-item">
-        <div class="card h-100">
-          <a href="https://amzn.to/3jj4hwy">
-            <img class="card-img-top" src="{% static 'affiliate/images/products/graphicscard.jpg' %}" alt="">
-          </a>
-          <div class="card-body">
-            <h4 class="card-title">
-              <a href="https://amzn.to/3jj4hwy">MSI Gaming GeForce GTX 1660 128-Bit HDMI/DP 6GB GDRR5 HDCP Support DirectX 12 Dual Fan VR Ready OC Graphics Card (GTX 1660 Gaming X 6G)</a>
-            </h4>
-            <p class="card-text">
-              Chipset: NVIDIA GeForce GTX 1660 |
-              Boost Clock: 1860 MHz |
-              Memory Interface: 128-bit
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-sm-6 portfolio-item">
-        <div class="card h-100">
-          <a href="https://amzn.to/30pVBfb"><img class="card-img-top" src="{% static 'affiliate/images/products/gamingchair.jpg' %}" alt=""></a>
-          <div class="card-body">
-            <h4 class="card-title">
-              <a href="https://amzn.to/30pVBfb">AKRacing Masters Series Max Gaming Chair with Wide Flat Seat, 400 Lbs Weight Limit, Rocker and Seat Height Adjustment Mechanisms with 5/10 Warranty,Indigo -</a>
-            </h4>
-            <p class="card-text"></p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-sm-6 portfolio-item">
-        <div class="card h-100">
-          <a href="https://amzn.to/3j91kOZ"><img class="card-img-top" src="{% static 'affiliate/images/products/gamingchair1.jpg' %}" alt=""></a>
-          <div class="card-body">
-            <h4 class="card-title">
-              <a href="https://amzn.to/3j91kOZ">RESPAWN 200 Racing Style Gaming Chair, in Blue (RSP-200-BLU)</a>
-            </h4>
-            <p class="card-text">GAMIFIED SEATING: A racecar-style gaming chair that provides luxury and comfort, whether it's used for intense gaming sessions and climbing to the top of the leaderboards, or long work days</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-sm-6 portfolio-item">
-        <div class="card h-100">
-          <a href="https://amzn.to/3hbspzb"><img class="card-img-top" src="{% static 'affiliate/images/products/standingdesk.jpg' %}" alt=""></a>
-          <div class="card-body">
-            <h4 class="card-title">
-              <a href="https://amzn.to/3hbspzb  ">Standing Desk with Height Adjustable – FEZIBO Stand Up Desk Converter, 34 inches Ergonomic Tabletop Workstation Riser Fits Dual Monitors Black</a>
-            </h4>
-            <p class="card-text"></p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-sm-6 portfolio-item">
-        <div class="card h-100">
-          <a href="https://amzn.to/3hbmZ7o"><img class="card-img-top" src="{% static 'affiliate/images/products/standingdesk1.jpg' %}" alt=""></a>
-          <div class="card-body">
-            <h4 class="card-title">
-              <a href="https://amzn.to/3hbmZ7o">Uprite Ergo Sit2Stand Desktop Height Adjustable Workstation - Dual Monitor - Black/Black</a>
-            </h4>
-            <p class="card-text">EASY SIT TO STAND: The Uprite Ergo Sit2Stand moves effortlessly from sitting to standing in seconds with the pull of a locking actuator handle, </p>
-          </div>
-        </div>
-      </div>
+      {% endfor %}
     </div>
     <!-- /.row -->
 
